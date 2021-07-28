@@ -1,0 +1,589 @@
+<robot name="onshape">
+    <link name="world" />
+    <joint name="world_to_base_link" type="fixed">
+        <parent link="world" />
+        <child link="base" />
+    </joint>
+    <link name="base">
+        <visual>
+            <origin xyz="-0.000601722 0 0.017" rpy="-1.5708 -0 -1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_std.stl" />
+            </geometry>
+            <material name="dc12_std_material">
+                <color rgba="0.105882 0.372549 0.666667 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.000601722 0 0.017" rpy="-1.5708 -0 -1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_std.stl" />
+            </geometry>
+            <material name="dc12_std_material">
+                <color rgba="0.105882 0.372549 0.666667 1.0" />
+            </material>
+        </collision>
+        
+<inertial>
+            <origin xyz="-0.0123142 -1.38388e-16 0.0179413" rpy="0 0 0" />
+            <mass value="0.0446183" />
+            <inertia ixx="1.08971e-05" ixy="1.14387e-07" ixz="-1.1985e-39" iyy="7.07357e-06" iyz="-4.60115e-37" izz="1.23796e-05" />
+        </inertial>
+
+    </link>
+    <link name="shoulder_1">
+        <visual>
+            <origin xyz="2.73219e-20 0 -0.0405" rpy="3.14159 -1.94301e-47 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w_idle.stl" />
+            </geometry>
+            <material name="dc12_w_idle_material">
+                <color rgba="0.811765 0.858824 0.898039 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.73219e-20 0 -0.0405" rpy="3.14159 -1.94301e-47 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w_idle.stl" />
+            </geometry>
+            <material name="dc12_w_idle_material">
+                <color rgba="0.811765 0.858824 0.898039 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-1.38507e-17 0 -0.04035" rpy="3.14159 1.94301e-47 -1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-02_xm_cover_rev0.stl" />
+            </geometry>
+            <material name="tb3m-02_xm_cover_rev0_material">
+                <color rgba="0.564706 0.811765 0.945098 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.38507e-17 0 -0.04035" rpy="3.14159 1.94301e-47 -1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-02_xm_cover_rev0.stl" />
+            </geometry>
+            <material name="tb3m-02_xm_cover_rev0_material">
+                <color rgba="0.564706 0.811765 0.945098 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 -0.0195" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_s102.stl" />
+            </geometry>
+            <material name="fr12_s102_material">
+                <color rgba="0.376471 0.415686 0.45098 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 -0.0195" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_s102.stl" />
+            </geometry>
+            <material name="fr12_s102_material">
+                <color rgba="0.376471 0.415686 0.45098 1.0" />
+            </material>
+        </collision>
+        
+<inertial>
+            <origin xyz="-0.000512091 0.000487854 -0.0312339" rpy="0 0 0" />
+            <mass value="0.0598675" />
+            <inertia ixx="2.12042e-05" ixy="-1.49327e-08" ixz="5.8219e-08" iyy="2.13926e-05" iyz="-4.29756e-07" izz="1.2306e-05" />
+        </inertial>
+
+    </link>
+    <link name="shoulder_2">
+        <visual>
+            <origin xyz="0 0 0.038" rpy="-1.5708 -0 2.56696e-38" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.038" rpy="-1.5708 -0 2.56696e-38" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 1.00234e-14" rpy="1.5708 -0 -3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 1.00234e-14" rpy="1.5708 -0 -3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_h101.stl" />
+            </geometry>
+            <material name="fr12_h101_material">
+                <color rgba="1 0.756863 0.054902 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_h101.stl" />
+            </geometry>
+            <material name="fr12_h101_material">
+                <color rgba="1 0.756863 0.054902 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0.128 0.019" rpy="2.56696e-38 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_s101.stl" />
+            </geometry>
+            <material name="fr12_s101_material">
+                <color rgba="0.564706 0.811765 0.945098 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0.128 0.019" rpy="2.56696e-38 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_s101.stl" />
+            </geometry>
+            <material name="fr12_s101_material">
+                <color rgba="0.564706 0.811765 0.945098 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.02385 0.128 0.019" rpy="-1.5708 3.85186e-34 -1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-102_servocover01-xm_rev2.stl" />
+            </geometry>
+            <material name="tb3m-102_servocover01-xm_rev2_material">
+                <color rgba="0.105882 0.372549 0.666667 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.02385 0.128 0.019" rpy="-1.5708 3.85186e-34 -1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-102_servocover01-xm_rev2.stl" />
+            </geometry>
+            <material name="tb3m-102_servocover01-xm_rev2_material">
+                <color rgba="0.105882 0.372549 0.666667 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.024 0.128 0.019" rpy="1.5708 -3.85186e-34 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w-idle_alt2.stl" />
+            </geometry>
+            <material name="dc12_w-idle_alt2_material">
+                <color rgba="0.105882 0.372549 0.666667 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.024 0.128 0.019" rpy="1.5708 -3.85186e-34 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w-idle_alt2.stl" />
+            </geometry>
+            <material name="dc12_w-idle_alt2_material">
+                <color rgba="0.105882 0.372549 0.666667 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0.0285 0.019" rpy="-1.5708 -3.85186e-34 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/ila-a01_open.stl" />
+            </geometry>
+            <material name="ila-a01_open_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0.0285 0.019" rpy="-1.5708 -3.85186e-34 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/ila-a01_open.stl" />
+            </geometry>
+            <material name="ila-a01_open_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </collision>
+        
+<inertial>
+            <origin xyz="0.0101991 0.0977202 0.0186443" rpy="0 0 0" />
+            <mass value="0.0904043" />
+            <inertia ixx="0.000224309" ixy="-2.95523e-05" ixz="9.03888e-08" iyy="3.74539e-05" iyz="2.18015e-06" izz="0.000220161" />
+        </inertial>
+
+    </link>
+    <link name="shoulder_3">
+        <visual>
+            <origin xyz="-2.77556e-17 0 9.95856e-15" rpy="1.5708 -0 3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-2.77556e-17 0 9.95856e-15" rpy="1.5708 -0 3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-2.77556e-17 0 0.038" rpy="-1.5708 -0 -1.79687e-37" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-2.77556e-17 0 0.038" rpy="-1.5708 -0 -1.79687e-37" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="2.77556e-17 0.12385 0.019" rpy="-1.5708 -0 -1.79687e-37" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-02_xm_cover_rev0.stl" />
+            </geometry>
+            <material name="tb3m-02_xm_cover_rev0_material">
+                <color rgba="0.564706 0.811765 0.945098 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.77556e-17 0.12385 0.019" rpy="-1.5708 -0 -1.79687e-37" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-02_xm_cover_rev0.stl" />
+            </geometry>
+            <material name="tb3m-02_xm_cover_rev0_material">
+                <color rgba="0.564706 0.811765 0.945098 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="2.77556e-17 0.124 0.019" rpy="1.5708 -0 3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w_idle.stl" />
+            </geometry>
+            <material name="dc12_w_idle_material">
+                <color rgba="0.811765 0.858824 0.898039 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.77556e-17 0.124 0.019" rpy="1.5708 -0 3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w_idle.stl" />
+            </geometry>
+            <material name="dc12_w_idle_material">
+                <color rgba="0.811765 0.858824 0.898039 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0.103 0.019" rpy="1.79687e-37 1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_s102.stl" />
+            </geometry>
+            <material name="fr12_s102_material">
+                <color rgba="0.376471 0.415686 0.45098 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0.103 0.019" rpy="1.79687e-37 1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_s102.stl" />
+            </geometry>
+            <material name="fr12_s102_material">
+                <color rgba="0.376471 0.415686 0.45098 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_h101.stl" />
+            </geometry>
+            <material name="fr12_h101_material">
+                <color rgba="1 0.756863 0.054902 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_h101.stl" />
+            </geometry>
+            <material name="fr12_h101_material">
+                <color rgba="1 0.756863 0.054902 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="5.55112e-17 0.0285 0.019" rpy="-1.5708 -0 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/ila-a02_open.stl" />
+            </geometry>
+            <material name="ila-a02_open_material">
+                <color rgba="0.866667 0.321569 0.156863 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="5.55112e-17 0.0285 0.019" rpy="-1.5708 -0 1.5708" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/ila-a02_open.stl" />
+            </geometry>
+            <material name="ila-a02_open_material">
+                <color rgba="0.866667 0.321569 0.156863 1.0" />
+            </material>
+        </collision>
+        
+<inertial>
+            <origin xyz="-0.000337765 0.0884894 0.018646" rpy="0 0 0" />
+            <mass value="0.086612" />
+            <inertia ixx="0.000183403" ixy="1.95663e-06" ixz="2.46169e-09" iyy="2.39543e-05" iyz="7.46348e-07" izz="0.000176235" />
+        </inertial>
+
+    </link>
+    <link name="shoulder_4">
+        <visual>
+            <origin xyz="-0.006 0.06325 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w_idle.stl" />
+            </geometry>
+            <material name="dc12_w_idle_material">
+                <color rgba="0.811765 0.858824 0.898039 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.006 0.06325 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/dc12_w_idle.stl" />
+            </geometry>
+            <material name="dc12_w_idle_material">
+                <color rgba="0.811765 0.858824 0.898039 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-5.55112e-17 0 0.038" rpy="-1.5708 -2.46519e-32 -2.08167e-14" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-5.55112e-17 0 0.038" rpy="-1.5708 -2.46519e-32 -2.08167e-14" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 9.92625e-15" rpy="1.5708 1.2326e-32 -3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 9.92625e-15" rpy="1.5708 1.2326e-32 -3.14159" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/tb3m-103_cablecover-h101_rev0.stl" />
+            </geometry>
+            <material name="tb3m-103_cablecover-h101_rev0_material">
+                <color rgba="0.603922 0.647059 0.686275 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/custom_frame_1.stl" />
+            </geometry>
+            <material name="custom_frame_1_material">
+                <color rgba="0.376471 0.415686 0.45098 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/custom_frame_1.stl" />
+            </geometry>
+            <material name="custom_frame_1_material">
+                <color rgba="0.376471 0.415686 0.45098 1.0" />
+            </material>
+        </collision>
+        
+<inertial>
+            <origin xyz="-0.0057215 0.041307 0.019" rpy="0 0 0" />
+            <mass value="0.0596282" />
+            <inertia ixx="3.77374e-05" ixy="2.36357e-06" ixz="1.47684e-07" iyy="2.05819e-05" iyz="1.2462e-13" izz="3.70475e-05" />
+        </inertial>
+
+    </link>
+    <link name="shoulder_5">
+        <visual>
+            <origin xyz="-3.75834e-17 0.0435 0.034" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/camera.stl" />
+            </geometry>
+            <material name="camera_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.75834e-17 0.0435 0.034" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/camera.stl" />
+            </geometry>
+            <material name="camera_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_h101.stl" />
+            </geometry>
+            <material name="fr12_h101_material">
+                <color rgba="1 0.756863 0.054902 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.019" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://openmanx_description/robots/fr12_h101.stl" />
+            </geometry>
+            <material name="fr12_h101_material">
+                <color rgba="1 0.756863 0.054902 1.0" />
+            </material>
+        </collision>
+        
+<inertial>
+            <origin xyz="-9.4374e-17 0.0405292 0.019" rpy="0 0 0" />
+            <mass value="0.0334233" />
+            <inertia ixx="8.02124e-06" ixy="-3.72296e-20" ixz="7.16479e-33" iyy="4.86122e-06" iyz="4.04231e-19" izz="8.10392e-06" />
+        </inertial>
+
+    </link>
+    <joint name="joint5" type="revolute">
+        <origin xyz="-0.025 0.06325 0.019" rpy="5.67023e-15 1.5708 0" />
+        <parent link="shoulder_4" />
+        <child link="shoulder_5" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.91986" upper="1.91986" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="joint4" type="revolute">
+        <origin xyz="2.77556e-17 0.124 1.008e-14" rpy="5.79028e-19 1.06685e-16 1.07771e-14" />
+        <parent link="shoulder_3" />
+        <child link="shoulder_4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.5708" upper="1.5708" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="joint3" type="revolute">
+        <origin xyz="0.024 0.128 -3.06922e-17" rpy="4.48778e-31 -3.46945e-18 -1.5708" />
+        <parent link="shoulder_2" />
+        <child link="shoulder_3" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.5708" upper="1.5708" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="joint2" type="revolute">
+        <origin xyz="-0.019 0 -0.0405" rpy="-1.5708 -2.62246e-19 -1.5708" />
+        <parent link="shoulder_1" />
+        <child link="shoulder_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.5708" upper="1.5708" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="joint1" type="revolute">
+        <origin xyz="-0.000601722 -2.53703e-20 0.036" rpy="-3.14159 -4.33681e-19 -1.5708" />
+        <parent link="base" />
+        <child link="shoulder_1" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-3.14159" upper="3.14159" />
+        <joint_properties friction="0.0" />
+    </joint>
+    
+<transmission name="trans_joint5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint5">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint5_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint4">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint4_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint3">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint3_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
